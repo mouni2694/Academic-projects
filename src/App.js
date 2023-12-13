@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import BannerComponent from "./components/bannerComponent/banner"
+import ProjectTitle from "./components/projectTitle/projectTitle"
+import OurProcess from "./components/ourProcess/ourProcess"
+import AcademicProjects from "./components/academicProjects/academicProjects"
+import OpeningHours from "./components/openingHours/openingHours"
+import AboutAktech from "./components/aboutAktech/aboutAktech"
+import Domains from "./components/domains/domains"
+import ProjectDisplay from "./components/projectDisplay/projectDisplay"
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className = "row">
+
+        <BannerComponent/>
+        <ProjectTitle/>
+        <OurProcess/>
+        <AcademicProjects/>
+        <OpeningHours/>
+        <AboutAktech/>
+        <Domains/>
+        <ProjectDisplay/>
+        
+      </div>
+      
     </div>
   );
 }
